@@ -10,7 +10,6 @@ permissions:
 
 jobs:
   preview:
-    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -30,6 +29,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/assets/corkboard-inspection.jpg
-          git rm .github/workflows/inspect-corkboard-hero.yml
           git commit -m "chore: add temporary Corkboard artwork preview"
           git push
