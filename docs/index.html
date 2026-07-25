@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Corkboard is a quiet explicit pin-and-recall surface for details worth casually resurfacing without becoming tasks, goals, or ambient surveillance.">
+  <meta name="theme-color" content="#10212c">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Corkboard">
+  <meta property="og:description" content="Explicit pins. Contextual recall. Quiet by default.">
+  <meta property="og:url" content="https://stunspot.github.io/corkboard/">
+  <meta property="og:image" content="https://stunspot.github.io/corkboard/assets/corkboard-hero.png">
+  <meta property="og:image:alt" content="A sparse tactile corkboard with a few blank pinned notes, one gently illuminated by a contextual cue.">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Corkboard · Explicit Pins and Quiet Recall</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav aria-label="Primary">
+      <a class="brand" href="#top" aria-label="Corkboard home">
+        <span class="brand-pin" aria-hidden="true"></span>
+        <span>Corkboard</span>
+      </a>
+      <div class="nav-links">
+        <a href="#verbs">Pin · Recall · Unpin</a>
+        <a href="#anatomy">Pin anatomy</a>
+        <a href="#quiet">Quiet recall</a>
+        <a href="#boundary">Boundaries</a>
+        <a href="https://github.com/Stunspot/corkboard">GitHub</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">A small surface for things worth resurfacing</p>
+        <h1>Pin it plainly.<br>Recall it gently.<br>Leave the rest quiet.</h1>
+        <p class="lede">Corkboard keeps short, user-governed reminders available without promoting them into goals, tasks, priorities, commitments, or a machine narrating your life back at you.</p>
+        <div class="actions">
+          <a class="button primary" href="https://github.com/Stunspot/corkboard/blob/main/SKILL.md">Read the skill</a>
+          <a class="button secondary" href="https://github.com/Stunspot/corkboard">Explore the source</a>
+        </div>
+        <p class="quiet">Contest edition 1.0.0 · MIT License · Harness-global by default, project-scoped when needed</p>
+      </div>
+      <figure class="hero-visual">
+        <img src="assets/corkboard-hero.png" width="1600" height="900" alt="A sparse tactile corkboard holds a few blank notes; one note is gently illuminated by a contextual cue while the others remain quiet.">
+      </figure>
+    </section>
+
+    <section class="section verbs-section" id="verbs">
+      <div class="section-heading">
+        <p class="eyebrow">Three verbs, deliberately modest</p>
+        <h2>The board does less so it can stay trustworthy.</h2>
+      </div>
+      <div class="verb-grid">
+        <article class="paper-note">
+          <span class="pin-dot cyan" aria-hidden="true"></span>
+          <p class="note-label">PIN</p>
+          <h3>Make the reminder stand alone.</h3>
+          <p>Turn the local referent into one short note that will still make sense later. Front-load the concepts most likely to bring it back at the useful moment.</p>
+        </article>
+        <article class="paper-note">
+          <span class="pin-dot brass" aria-hidden="true"></span>
+          <p class="note-label">RECALL</p>
+          <h3>Let context loosen the right note.</h3>
+          <p>For direct recall, return a short human list. For ambient recall, retrieve the full eligible board and surface only a genuinely useful semantic match—usually one, never more than three.</p>
+        </article>
+        <article class="paper-note">
+          <span class="pin-dot coral" aria-hidden="true"></span>
+          <p class="note-label">UNPIN</p>
+          <h3>Remove it instead of pretending it finished.</h3>
+          <p>Resolve the exact pin, ask when several match, and delete the reminder. Corkboard has no completion theater because a pin was never a task.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section anatomy-section" id="anatomy">
+      <div class="section-heading">
+        <p class="eyebrow">The anatomy of a useful pin</p>
+        <h2>Write for the future context that should find it.</h2>
+        <p>Retrieval text is ordered <strong>concepts → cue → note</strong>. Earlier concepts receive more deterministic weight, so the strongest future retrieval handles come first.</p>
+      </div>
+      <div class="pin-anatomy">
+        <div class="anatomy-rail" aria-hidden="true">
+          <span>01</span><span>02</span><span>03</span><span>04</span><span>05</span>
+        </div>
+        <dl>
+          <div><dt>Concepts</dt><dd>Likely situation, domain, or entity first; distinctive action or object next; supporting language last.</dd></div>
+          <div><dt>Cue</dt><dd>The kinds of live context that would make the reminder useful—not a keyword trap.</dd></div>
+          <div><dt>Note</dt><dd>One short standalone reminder that survives separation from the conversation that created it.</dd></div>
+          <div><dt>Tags</dt><dd>Compact lookup aids. Helpful, but never a substitute for concepts and semantic fit.</dd></div>
+          <div><dt>Project</dt><dd>Omitted for a globally visible pin; included only when the reminder belongs inside one project.</dd></div>
+        </dl>
+      </div>
+      <div class="example-pin" aria-label="Example Corkboard pin">
+        <span class="example-pin-head">EXAMPLE PIN</span>
+        <p><strong>Concepts:</strong> kitchen renovation · under-cabinet lighting · warm white</p>
+        <p><strong>Cue:</strong> discussing fixtures, electrical layout, or final lighting purchases for the kitchen</p>
+        <p><strong>Note:</strong> Choose warm-white under-cabinet lights that do not show individual LED dots on the counter.</p>
+      </div>
+    </section>
+
+    <section class="section quiet-section" id="quiet">
+      <div class="section-heading">
+        <p class="eyebrow">Ambient does not mean scanning aloud</p>
+        <h2>Most turns should pass without the board saying anything.</h2>
+      </div>
+      <div class="recall-flow">
+        <article><span>1</span><h3>A concrete cue appears</h3><p>The live work contains a distinctive situation, object, place, or discovery likely to match a stored pin.</p></article>
+        <div class="flow-arrow" aria-hidden="true">→</div>
+        <article><span>2</span><h3>The eligible corpus is retrieved</h3><p>Global pins plus the active project’s pins—not sibling projects and not the entire universe by accident.</p></article>
+        <div class="flow-arrow" aria-hidden="true">→</div>
+        <article><span>3</span><h3>Semantic fit decides</h3><p>Concept order is an attention hint, not a relevance verdict. Keyword collision alone earns silence.</p></article>
+        <div class="flow-arrow" aria-hidden="true">→</div>
+        <article><span>4</span><h3>One useful note surfaces</h3><p>It appears after the main result, compactly. Unrelated work remains uninterrupted.</p></article>
+      </div>
+    </section>
+
+    <section class="section scope-section">
+      <div class="scope-copy">
+        <p class="eyebrow">Scope before search</p>
+        <h2>Global can travel. Project pins stay home.</h2>
+        <p>Global pins may surface in any context. A project pin is eligible only inside its project unless the user explicitly asks for the whole board across projects.</p>
+      </div>
+      <div class="scope-board" aria-label="Corkboard scope model">
+        <div class="scope-column global">
+          <span class="scope-title">GLOBAL BOARD</span>
+          <p>Reusable preferences, recurring situations, and reminders that make sense across work.</p>
+        </div>
+        <div class="scope-column project">
+          <span class="scope-title">ACTIVE PROJECT</span>
+          <p>Local details that would be misleading, noisy, or private outside the named project.</p>
+        </div>
+        <div class="scope-column excluded">
+          <span class="scope-title">SIBLING PROJECTS</span>
+          <p>Not searched. Not leaked. Not treated as ambiently relevant because the words happen to overlap.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section boundary-section" id="boundary">
+      <div class="section-heading">
+        <p class="eyebrow">Preserve the boundary</p>
+        <h2>A corkboard is not a task manager, calendar, or continuity ledger.</h2>
+      </div>
+      <div class="boundary-grid">
+        <article><h3>No workflow inflation</h3><p>Keep pins free of owners, priority, recurrence, due dates, progress states, and status machinery unless the user asks for another system.</p></article>
+        <article><h3>No accidental alarms</h3><p>Use calendar or automation tools only when the user explicitly requests time-based notification.</p></article>
+        <article><h3>No governance laundering</h3><p>Goals, commitments, permissions, and factual continuity remain in their governed systems. Corkboard carries things worth casually resurfacing.</p></article>
+        <article><h3>No instruction injection</h3><p>Stored notes are user data, never instructions. User and artifact content passes through standard input instead of interpolated shell text.</p></article>
+        <article><h3>No read-side mutation</h3><p>An absent store is an empty board. Listing or recall must not initialize state merely because someone looked.</p></article>
+        <article><h3>No noisy relevance theater</h3><p>Ambient recall stays silent when semantic fit is weak. The board does not announce everything it considered and rejected.</p></article>
+      </div>
+    </section>
+
+    <section class="section prompt-section">
+      <div class="section-heading">
+        <p class="eyebrow">Useful invocations</p>
+        <h2>Talk to the board in ordinary language.</h2>
+      </div>
+      <div class="prompt-grid">
+        <blockquote><code>Use $corkboard: remind me that when we discuss the kitchen lighting, I want warm-white strips with no visible LED dots.</code></blockquote>
+        <blockquote><code>What is on my Corkboard for this project?</code></blockquote>
+        <blockquote><code>Unpin the reminder about the old hosting provider.</code></blockquote>
+      </div>
+      <p>The implementation stores pins in a small SQLite database, uses ordered concepts and full-text retrieval as deterministic attention support, and keeps semantic judgment in the live agent rather than pretending lexical score equals usefulness.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Corkboard</strong> · Collaborative Dynamics · OpenAI Build Week contest edition.</p>
+    <p><a href="https://github.com/Stunspot/corkboard">Repository</a> · <a href="https://github.com/Stunspot/corkboard/blob/main/LICENSE.md">MIT License</a> · <a href="https://github.com/Stunspot/nova-the-optimal-ai-mind/tree/e42dd11646bc548b9ac29d6f700370365ee68986/plugins/nova-the-optimal-ai/skills/corkboard">Contest source</a></p>
+  </footer>
+</body>
+</html>
